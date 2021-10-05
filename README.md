@@ -17,6 +17,6 @@
 ### Files
 
 - db.js - mongodb connection instance
-- server.js - start the server and generate the Patients and Emails collections for
+- server.js - start the server and generate the Patients and Emails collections
 - scripts/unit-tests/server.test.js - unit test
 - assets/patients.csv - patients csv file
