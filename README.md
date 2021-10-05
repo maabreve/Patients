@@ -8,8 +8,8 @@
 ### Prerequisites
 - MongoDB running locally at 127.0.0.1:27017
 
-### Run server
-- node server.js - By running this command, the collections Patients and Emails will be created at the Patients database
+### Runnint the server
+- 'node server' command to run the(the Patients and Emails collections will be created at the Patients database when the server is started.)
 
-### Run unit tests
-- mocha  scripts/unit-tests/server.test.js
+### Running the unit tests
+- 'mocha scripts/unit-tests/server.test.js' command

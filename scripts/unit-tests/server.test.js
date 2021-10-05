@@ -72,11 +72,9 @@ describe('Patients unit test', () => {
 
           describe('Emails collection check', () => {
             it('Emails collection matches consented emails from file csv', ()=> {
-              assert(JSON.stringify(consentEmails) !== JSON.stringify(emails), 'Consent Emails collection not match with file')
+              assert(JSON.stringify(consentEmails) === JSON.stringify(emails), 'Consent Emails collection not match with file')
             })
           })
-
       });
-  }
-
+    }
 )});
