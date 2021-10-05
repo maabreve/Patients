@@ -4,7 +4,8 @@
   "description": "Parallestaff test",
   "main": "server.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha"
+    "dev": "node server",
+    "test": "./node_modules/mocha/bin/mocha scripts/unit-tests/**/*test.js --reporter spec"
   },
   "author": "",
   "license": "ISC",

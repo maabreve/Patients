@@ -58,8 +58,8 @@ describe('Patients unit test', () => {
 
           describe('File consistencies', () => {
             it('Consented with empty emails', ()=> {
-              if (emptyEmails) {
-                assert.fail(`${emptyEmails.length>1 ? 'Patients' : 'Patient'} ${emptyEmails} - empty email`)
+            if (emptyEmails) {
+               assert.fail(`${emptyEmails.length>1 ? 'Patients' : 'Patient'} ${emptyEmails} - empty email`)
               };
             });
 
