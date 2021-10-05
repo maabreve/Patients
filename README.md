@@ -1,5 +1,4 @@
 # Patients
-## Parallelstaff test
 
 ### Installation
 - git clone https://github.com/maabreve/Patients.git
