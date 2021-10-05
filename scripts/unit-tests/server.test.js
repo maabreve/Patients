@@ -10,11 +10,11 @@ describe('Patients unit test', () => {
   let file;
 
   before(async () => {
-  connection = await MongoClient.connect('mongodb://127.0.0.1:27017', {
-    useNewUrlParser: true,
-  });
-  db = connection.db('Patients');
-  fileCSV = fs.createReadStream(path.resolve('./', 'assets', 'patients.csv'));
+    connection = await MongoClient.connect('mongodb://127.0.0.1:27017', {
+      useNewUrlParser: true,
+    });
+    db = connection.db('Patients');
+    fileCSV = fs.createReadStream(path.resolve('./', 'assets', 'patients.csv'));
   });
 
   after(async () => {
