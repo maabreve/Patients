@@ -9,9 +9,10 @@ db.connect(() => {
   const emailsCollection = patientsDb.collection('Emails');
   const patientsArray = [];
   const emailsArray = [];
-  let contEmails = 1;
 
   console.log('Database connected!')
+
+  let contEmails = 1;
 
   // Read and create Patients and Emails documents
   fs.createReadStream(path.resolve(__dirname, 'assets', 'patients.csv'))
@@ -25,7 +26,8 @@ db.connect(() => {
           email: row['Email Address'],
           name: `Day ${contEmails}`,
           scheduled_date: new Date(today.setDate(today.getDate() + contEmails)).toISOString()
-        })
+        });
+
         contEmails++;
       }
     })
@@ -45,5 +47,5 @@ db.connect(() => {
         }
       });
     });
-} );
-
+  }
+);
