@@ -13,3 +13,11 @@
 
 ### Running the unit tests
 - npm run test
+
+
+### Files
+
+- db.js - mongodb connection instance
+- server.js - start the server and generate the Patients and Emails collections for
+- scripts/unit-tests/server.test.js - unit test
+- assets/patients.csv - patients csv file
